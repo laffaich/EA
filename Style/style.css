@@ -1,0 +1,375 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    background-color:#f8b195;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+.logo{
+    padding-top: 20px;
+    max-height: 110px;
+}
+.logmenu{
+    list-style-type: none;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: right;
+    font-size: 0.8rem;
+}
+.logmenu li{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15%;
+}
+.logmenu li a{
+    text-decoration: none;
+    color: white;
+}
+.logmenu li:hover{
+    transition: all 0.3s ease-in-out;
+    color: white;
+    background-color: gray
+}
+.menu{
+    list-style-type: none;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: right;
+    font-size: 2.3rem;
+}
+@media screen and (max-width: 768px){
+    .logmenu, .menu{
+        font-size: 0.7rem;
+    }
+}
+.menu li{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15%;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+.menu li:hover{
+    transition: all 0.3s ease-in-out;
+    color: white;
+    background-color: gray
+}
+.video{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.videoFondo{
+    width: 100%;
+    filter: brightness(0.7);
+}
+.textoPrueba{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.title{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white; 
+    letter-spacing: 30px;
+    font-size: 3.5rem;
+}
+.phrase{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white; 
+    letter-spacing: 30px;
+    font-size: 2.5rem;
+    padding: 30px;
+}
+.text{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: white;
+    width: 100%;
+    background-color: #d36e70;
+    padding: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+.contact{
+    background-color: #c06c84;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.msg{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #c06c84;
+    padding: 100px;
+}
+.formulario{
+    background-color: #c06c84;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;   
+    padding: 20px;
+}
+.field{
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 3%;
+    border-style: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    width: 350px;
+
+}
+.button{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    width: 350px;
+    
+}
+.opinions{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white    ;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #6c5b7b;
+    padding: 30px;
+}
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #6c5b7b;
+    padding: 10px;
+}
+.footer{
+    background-color: #355c7d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.logo2{
+    max-width: auto;
+}
+.aboutus2{
+    max-width: 600px;
+    font-size: 2rem;
+    justify-content: flex-start;
+}
+.abouttext{
+    font-size: 1rem;
+}
+.follow{
+    font-size: 2rem;
+}
+.follow li{
+    display: inline-block;
+}
+.follow img{
+    width: 50px;
+}
+.legal{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+.mainteachers, .maincourses{
+    background-color: #6c5b7b;
+}
+.teachers{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white    ;
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px;
+}
+.teacherslist{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:  
+        "teacherimga aboutteachera empty1"
+        "empty2 teacherimgb aboutteacherb"
+        "teacherimgc aboutteacherc empty3";
+}
+.teacherimga{
+    grid-area: teacherimga;
+}
+.teacherimgb{
+    grid-area: teacherimgb;
+}
+.teacherimgc{
+    grid-area: teacherimgc;
+}
+.aboutteachera{
+    grid-area: aboutteachera;
+}
+.aboutteacherb{
+    grid-area: aboutteacherb;
+}
+.aboutteacherc{
+    grid-area: aboutteacherc;
+}
+.empty1{
+    grid-area: empty;
+}
+.empty2{
+    grid-area: empty2;
+}
+.empty3{
+    grid-area: empty3;
+}
+.teacherimga, .teacherimgb, .teacherimgc{
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 1rem black);
+    padding: 10%;
+    width: 100%;
+}
+.aboutteachera, .aboutteacherb, .aboutteacherc{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white    ;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    padding: 10px;
+    justify-self: stretch;
+}
+@media screen and (max-width: 768px){
+    .teacherslist{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(6, 1fr);    
+        grid-template-areas: 
+        "teacherimga"
+        "aboutteachera"
+        "teacherimgb"
+        "aboutteacherb"
+        "teacherimgc"
+        "aboutteacherc"
+    }
+    .empty1, .empty2, .empty3{
+        display: none;
+    }
+    .teacherimga, .teacherimgb, .teacherimgc{
+        border-radius: 10px;
+        filter: drop-shadow(5px 5px 1rem black);
+        padding: 10%;
+        width: 100%;
+    
+    }
+}
+
+.maincourses{
+    display: flex;
+    flex-direction: column;
+    height: 1600px;
+}
+.coursestitle{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white    ;
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.padre{
+    max-width: 1254px;
+    max-height: 836px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(3, 418px);    
+    grid-template-areas: 
+    "esp kids"
+    "teens adults"
+    "conversation prep";
+}
+.hijo{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: none;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+    position: relative;
+}
+.hijo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.3);
+    width: 100%;
+    height: 100%;
+}
+.hijo img:hover{
+    transition: all 0.3s ease-in-out;
+    filter: brightness(0.7);
+}
+.hijo h2, p{
+    position: relative;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+.esp{
+    grid-area: esp;
+}
+.kids{
+    grid-area: kids;
+}
+.teens{
+    grid-area: teens;
+}
+.adults{
+    grid-area: adults;
+}
+.conversation{
+    grid-area: conversation;
+}
+.prep{
+    grid-area: prep;
+}
+@media screen and (max-width: 768px){
+    .padre{
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(6, 418px);    
+        grid-template-areas: 
+        "esp"
+        "kids"
+        "teens"
+        "adults"
+        "conversation"
+        "prep";
+    }
+}
