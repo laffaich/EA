@@ -151,13 +151,18 @@
     width: 350px;
     
 }
-.opinions{
+.opinions-title{
     font-family: 'Josefin Sans', sans-serif;
     color: white    ;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2em;
+    padding: 10px;
+}
+.carousel{
+    padding: 10px;
     background-color: #6c5b7b;
-    padding: 30px;
+    text-align: center;
+    color: white;
 }
 .gallery{
     display: flex;
