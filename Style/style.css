@@ -9,8 +9,8 @@
 .container{
     display: flex;
     justify-content: space-between;
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 .logo{
     padding-top: 20px;
@@ -45,7 +45,7 @@
     margin: 10px;
     font-family: 'Josefin Sans', sans-serif;
     text-align: right;
-    font-size: 2.3rem;
+    font-size: 2.3em;
 }
 @media screen and (max-width: 768px){
     .logmenu, .menu{
