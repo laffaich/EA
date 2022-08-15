@@ -3,9 +3,21 @@
     padding:0;
     box-sizing: border-box;
 }
-.header{
-    background-color:#f8b195;
+.navbar, .header{
+    background-color: #f8b195;
+    padding-left: 30px;
+    padding-right: 30px;
 }
+.nav-item{
+    font-size: 1.5em;
+}
+.nav-item:hover{
+    transition: all 0.3s ease-in-out;
+    color: gray;
+    background-color: gray;
+    border-radius: 50%;
+}
+
 .container{
     display: flex;
     justify-content: space-between;
@@ -47,11 +59,7 @@
     text-align: right;
     font-size: 2.3em;
 }
-@media screen and (max-width: 768px){
-    .logmenu, .menu{
-        font-size: 0.7rem;
-    }
-}
+
 .menu li{
     color: white;
     display: inline-block;
@@ -111,6 +119,20 @@
     padding-right: 150px;
 
 }
+@media screen and (max-width: 768px){
+    .title{
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+    .phrase{
+        font-size: 1.5rem;
+        letter-spacing: 10px;
+    }
+    .text{
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
 .contact{
     background-color: #c06c84;
     display: flex;
@@ -141,7 +163,6 @@
     margin: 10px;
     font-size: 1rem;
     width: 350px;
-
 }
 .button{
     font-family: 'Josefin Sans', sans-serif;
@@ -150,6 +171,19 @@
     font-size: 1rem;
     width: 350px;
     
+}
+@media screen and (max-width: 768px){
+    .msg{
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    .formulario{
+        padding: 5px;
+    }
+    .field, .button, .form-check{
+        font-size: 0.5rem;
+        width: 150px;
+    }
 }
 .opinions-title{
     font-family: 'Josefin Sans', sans-serif;
@@ -178,15 +212,7 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 .logo2{
-    max-width: auto;
-}
-.aboutus2{
-    max-width: 600px;
-    font-size: 2rem;
-    justify-content: flex-start;
-}
-.abouttext{
-    font-size: 1rem;
+    max-width: 100%;
 }
 .follow{
     font-size: 2rem;
@@ -202,15 +228,40 @@
     text-align: center;
     padding: 5px;
 }
-.mainteachers, .maincourses{
+.mainteachers, .maincourses, .aboutus-page{
     background-color: #6c5b7b;
 }
-.teachers{
+.aboutus-page{
+    color: white;
+}
+.teachers, .aboutus-title{
     font-family: 'Josefin Sans', sans-serif;
     color: white    ;
     text-align: center;
     font-size: 3rem;
     padding: 20px;
+}
+.aboutus-text{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: white;
+    width: 100%;
+    padding: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+}    
+@media screen and (max-width: 768px){
+    .aboutus-title{
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+    .aboutus-text{
+        font-size: 0.8rem;
+        padding: 10px;
+    }
 }
 .teacherslist{
     width: 100%;
@@ -286,10 +337,8 @@
         filter: drop-shadow(5px 5px 1rem black);
         padding: 10%;
         width: 100%;
-    
     }
 }
-
 .maincourses{
     display: flex;
     flex-direction: column;
@@ -376,5 +425,8 @@
         "adults"
         "conversation"
         "prep";
+    }
+    .hijo{
+        font-size: 0.8rem;
     }
 }
