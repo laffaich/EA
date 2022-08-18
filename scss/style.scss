@@ -1,0 +1,22 @@
+.aboutus-page{
+    background-color: #6c5b7b;
+    .aboutus-title{
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .aboutus-text{
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: justify;
+        letter-spacing: 5px;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: white;
+        width: 100%;
+        padding: 30px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}

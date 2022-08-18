@@ -13,69 +13,8 @@
 }
 .nav-item:hover{
     transition: all 0.3s ease-in-out;
-    color: gray;
     background-color: gray;
     border-radius: 50%;
-}
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 100px;
-    padding-left: 100px;
-}
-.logo{
-    padding-top: 20px;
-    max-height: 110px;
-}
-.logmenu{
-    list-style-type: none;
-    margin: 10px;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: right;
-    font-size: 0.8rem;
-}
-.logmenu li{
-    color: white;
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 15%;
-}
-.logmenu li a{
-    text-decoration: none;
-    color: white;
-}
-.logmenu li:hover{
-    transition: all 0.3s ease-in-out;
-    color: white;
-    background-color: gray
-}
-.menu{
-    list-style-type: none;
-    margin: 10px;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: right;
-    font-size: 2.3em;
-}
-
-.menu li{
-    color: white;
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 15%;
-}
-.menu li a{
-    text-decoration: none;
-    color: white;
-}
-.menu li:hover{
-    transition: all 0.3s ease-in-out;
-    color: white;
-    background-color: gray
 }
 .video{
     width: 100%;
@@ -117,21 +56,6 @@
     padding: 30px;
     padding-left: 150px;
     padding-right: 150px;
-
-}
-@media screen and (max-width: 768px){
-    .title{
-        font-size: 2rem;
-        letter-spacing: 10px;
-    }
-    .phrase{
-        font-size: 1.5rem;
-        letter-spacing: 10px;
-    }
-    .text{
-        font-size: 0.8rem;
-        padding: 10px;
-    }
 }
 .contact{
     background-color: #c06c84;
@@ -170,20 +94,6 @@
     margin: 10px;
     font-size: 1rem;
     width: 350px;
-    
-}
-@media screen and (max-width: 768px){
-    .msg{
-        font-size: 1.5rem;
-        padding: 20px;
-    }
-    .formulario{
-        padding: 5px;
-    }
-    .field, .button, .form-check{
-        font-size: 0.5rem;
-        width: 150px;
-    }
 }
 .opinions-title{
     font-family: 'Josefin Sans', sans-serif;
@@ -206,16 +116,13 @@
 }
 .footer{
     background-color: #355c7d;
+    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
-}
-.logo2{
-    max-width: 100%;
 }
 .follow{
     font-size: 2rem;
+    padding: 10px;
 }
 .follow li{
     display: inline-block;
@@ -253,16 +160,6 @@
     padding-left: 150px;
     padding-right: 150px;
 }    
-@media screen and (max-width: 768px){
-    .aboutus-title{
-        font-size: 2rem;
-        letter-spacing: 10px;
-    }
-    .aboutus-text{
-        font-size: 0.8rem;
-        padding: 10px;
-    }
-}
 .teacherslist{
     width: 100%;
     padding-left: 10%;
@@ -315,29 +212,6 @@
     letter-spacing: 0.5rem;
     padding: 10px;
     justify-self: stretch;
-}
-@media screen and (max-width: 768px){
-    .teacherslist{
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-rows: repeat(6, 1fr);    
-        grid-template-areas: 
-        "teacherimga"
-        "aboutteachera"
-        "teacherimgb"
-        "aboutteacherb"
-        "teacherimgc"
-        "aboutteacherc"
-    }
-    .empty1, .empty2, .empty3{
-        display: none;
-    }
-    .teacherimga, .teacherimgb, .teacherimgc{
-        border-radius: 10px;
-        filter: drop-shadow(5px 5px 1rem black);
-        padding: 10%;
-        width: 100%;
-    }
 }
 .maincourses{
     display: flex;
@@ -414,6 +288,23 @@
 .prep{
     grid-area: prep;
 }
+@media screen and (max-width: 1270px){
+    .nav-item{
+        max-width: 80px;
+        font-size: 0.8rem;
+    }
+    .title{
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+    }
+    .phrase{
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+    .nav-item:hover{
+        background-color: #f8b195;
+    }
+}
 @media screen and (max-width: 768px){
     .padre{
         grid-template-columns: 1fr; 
@@ -428,5 +319,57 @@
     }
     .hijo{
         font-size: 0.8rem;
+    }
+    .title{
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+    .phrase{
+        font-size: 1.5rem;
+        letter-spacing: 10px;
+    }
+    .text{
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    .teacherslist{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(6, 1fr);    
+        grid-template-areas: 
+        "teacherimga"
+        "aboutteachera"
+        "teacherimgb"
+        "aboutteacherb"
+        "teacherimgc"
+        "aboutteacherc"
+    }
+    .empty1, .empty2, .empty3{
+        display: none;
+    }
+    .teacherimga, .teacherimgb, .teacherimgc{
+        border-radius: 10px;
+        filter: drop-shadow(5px 5px 1rem black);
+        padding: 10%;
+        width: 100%;
+    }
+    .aboutus-title{
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+    .aboutus-text{
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    .msg{
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    .formulario{
+        padding: 5px;
+    }
+    .field, .button, .form-check{
+        font-size: 0.5rem;
+        width: 150px;
     }
 }
