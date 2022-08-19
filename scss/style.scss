@@ -4,211 +4,214 @@
     padding:0;
     box-sizing: border-box;
 }
-.navbar, .header{
-    background-color:$fondonav;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.nav-item{
-    font-size: 1.5em;
-    &:hover{
-        transition: all 0.3s ease-in-out;
-        background-color:$navhover;
-        border-radius: 50%;
+.header{
+    .navbar{
+        background-color:$fondonav;
+        padding-left: 30px;
+        padding-right: 30px;
+            .nav-item{
+                font-size: 1.5em;
+                &:hover{
+                transition: all 0.3s ease-in-out;
+                background-color:$navhover;
+                border-radius: 50%;
+            }
+        }
     }
 }
-.video{
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.videoFondo{
-    width: 100%;
-    filter: brightness(0.7);
-}
-.textoPrueba{
-    position: absolute;
-    width: 100%;
-    text-align: center;
-}
-.title{
-    font-family: 'Josefin Sans', sans-serif;
-    color:$letters; 
-    letter-spacing: 30px;
-    font-size: 3.5rem;
-}
-.phrase{
-    font-family: 'Josefin Sans', sans-serif;
-    color:$letters; 
-    letter-spacing: 30px;
-    font-size: 2.5rem;
-    padding: 30px;
-}
-.text{
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: justify;
-    letter-spacing: 5px;
-    font-size: 2rem;
-    line-height: 1.5;
-    color:$letters;
-    width: 100%;
-    background-color:$bgtext;
-    padding: 30px;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-.contact{
-    background-color:$bgcontact;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.msg{
-    font-family: 'Josefin Sans', sans-serif;
-    color:$letters;
-    text-align: center;
-    font-size: 3rem;
-    background-color:$bgcontact;
-    padding: 100px;
-}
-.formulario{
-    background-color:$bgcontact;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;   
-    padding: 20px;
-}
-.field{
-    font-family: 'Josefin Sans', sans-serif;
-    border-radius: 3%;
-    border-style: none;
-    padding: 10px;
-    margin: 10px;
-    font-size: 1rem;
-    width: 350px;
-}
-.button{
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 10px;
-    margin: 10px;
-    font-size: 1rem;
-    width: 350px;
-}
-.opinions-title{
-    font-family: 'Josefin Sans', sans-serif;
-    color:$letters;
-    text-align: center;
-    font-size: 2em;
-    padding: 10px;
-}
-.carousel{
-    padding: 10px;
-    background-color:$bggral;
-    text-align: center;
-    color:$letters;
-}
-.footer{
-    background-color:$bgfooter;
-    font-family: 'Josefin Sans', sans-serif;
-    display: flex;
-    justify-content: space-evenly;
-}
-.follow{
-    font-size: 2rem;
-    color: $letters;
-    padding: 10px;
-    li{
-        display: inline-block;
+main{
+    section{
+        .video{
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            .videoFondo{
+                width: 100%;
+                filter: brightness(0.7);
+            }   
+            .textoPrueba{
+                position: absolute;
+                width: 100%;
+                text-align: center;
+            }
+            .title{
+                font-family: 'Josefin Sans', sans-serif;
+                color:$letters; 
+                letter-spacing: 30px;
+                font-size: 3.5rem;
+            }
+            .phrase{
+                font-family: 'Josefin Sans', sans-serif;
+                color:$letters; 
+                letter-spacing: 30px;
+                font-size: 2.5rem;
+                padding: 30px;
+            }
+        }
+        .text{
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: justify;
+            letter-spacing: 5px;
+            font-size: 2rem;
+            line-height: 1.5;
+            color:$letters;
+            width: 100%;
+            background-color:$bgtext;
+            padding: 30px;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        .contact{
+            background-color:$bgcontact;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .msg{
+                font-family: 'Josefin Sans', sans-serif;
+                color:$letters;
+                text-align: center;
+                font-size: 3rem;
+                background-color:$bgcontact;
+                padding: 100px;
+            }
+            .formulario{
+                background-color:$bgcontact;
+                text-align: center;
+                font-family: 'Josefin Sans', sans-serif;   
+                padding: 20px;
+                .field{
+                    font-family: 'Josefin Sans', sans-serif;
+                    border-radius: 3%;
+                    border-style: none;
+                    padding: 10px;
+                    margin: 10px;
+                    font-size: 1rem;
+                    width: 350px;
+                }
+                .button{
+                    font-family: 'Josefin Sans', sans-serif;
+                    padding: 10px;
+                    margin: 10px;
+                    font-size: 1rem;
+                    width: 350px;
+                }
+            }
+        }
+        .opinions-title{
+            font-family: 'Josefin Sans', sans-serif;
+            color:$letters;
+            text-align: center;
+            font-size: 2em;
+            padding: 10px;
+        }
+        .carousel{
+            padding: 10px;
+            background-color:$bggral;
+            text-align: center;
+            color:$letters;
+        }
     }
-    img{
-        width: 50px;
+}
+footer{
+    section{
+        .footer{
+            background-color:$bgfooter;
+            font-family: 'Josefin Sans', sans-serif;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .rs .follow{
+            font-size: 2rem;
+            color: $letters;
+            padding: 10px;
+            li{
+                display: inline-block;
+            }
+            img{
+                width: 50px;
+            }   
+        }
+        .legal{
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+            padding: 5px;
+        }
     }
 }
 
-.legal{
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-    padding: 5px;
-}
 .mainteachers, .maincourses, .aboutus-main{
     background-color:$bggral;
 }
-.aboutus-page{
-    color:$letters;
+.mainteachers{
+    .teachers{
+        font-family: 'Josefin Sans', sans-serif;
+        color:$letters;
+        text-align: center;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .teacherslist{
+        padding-left: 10%;
+        padding-right: 10%;
+        display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:  
+            "teacherimga aboutteachera empty1"
+            "empty2 teacherimgb aboutteacherb"
+            "teacherimgc aboutteacherc empty3";
+        .teacherimga{
+            grid-area: teacherimga;
+        }
+        .teacherimgb{
+            grid-area: teacherimgb;
+        }
+        .teacherimgc{
+            grid-area: teacherimgc;
+        }
+        .aboutteachera {
+            grid-area: aboutteachera;
+        }
+        .aboutteacherb{
+            grid-area: aboutteacherb;
+        }
+        .aboutteacherc{
+            grid-area: aboutteacherc;
+        }
+        .empty1{
+            grid-area: empty;
+        }
+        .empty2{
+            grid-area: empty2;
+        }
+        .empty3{
+            grid-area: empty3;
+        }
+        .teacherimga, .teacherimgb, .teacherimgc{
+            border-radius: 10px;
+                filter: drop-shadow(5px 5px 1rem black);
+            padding: 10%;
+            
+        }
+        .aboutteachera, .aboutteacherb, .aboutteacherc{
+            font-family: 'Josefin Sans', sans-serif;
+            color:$letters;
+            font-size: 1rem;
+            letter-spacing: 0.5rem;
+            padding: 10px;
+            justify-self: stretch;
+        }
+    }
 }
-.teachers, .aboutus-title{
+.aboutus-title{
     font-family: 'Josefin Sans', sans-serif;
     color:$letters;
     text-align: center;
     font-size: 3rem;
     padding: 20px;
-}
-.aboutus-text{
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: justify;
-    letter-spacing: 5px;
-    font-size: 2rem;
-    line-height: 1.5;
-    color:$letters;
-    width: 100%;
-    padding: 30px;
-    padding-left: 150px;
-    padding-right: 150px;
-    margin: 0;
-}    
-.teacherslist{
-    padding-left: 10%;
-    padding-right: 10%;
-    display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:  
-        "teacherimga aboutteachera empty1"
-        "empty2 teacherimgb aboutteacherb"
-        "teacherimgc aboutteacherc empty3";
-}
-.teacherimga{
-    grid-area: teacherimga;
-}
-.teacherimgb{
-    grid-area: teacherimgb;
-}
-.teacherimgc{
-    grid-area: teacherimgc;
-}
-.aboutteachera{
-    grid-area: aboutteachera;
-}
-.aboutteacherb{
-    grid-area: aboutteacherb;
-}
-.aboutteacherc{
-    grid-area: aboutteacherc;
-}
-.empty1{
-    grid-area: empty;
-}
-.empty2{
-    grid-area: empty2;
-}
-.empty3{
-    grid-area: empty3;
-}
-.teacherimga, .teacherimgb, .teacherimgc{
-    border-radius: 10px;
-    filter: drop-shadow(5px 5px 1rem black);
-    padding: 10%;
-
-}
-.aboutteachera, .aboutteacherb, .aboutteacherc{
-    font-family: 'Josefin Sans', sans-serif;
-    color:$letters;
-    font-size: 1rem;
-    letter-spacing: 0.5rem;
-    padding: 10px;
-    justify-self: stretch;
 }
 .maincourses{
     display: flex;
@@ -264,7 +267,6 @@
             align-items: center;
         }
 }
-
 .esp{
     grid-area: esp;
 }
@@ -283,21 +285,37 @@
 .prep{
     grid-area: prep;
 }
+.aboutus-page{
+    color:$letters;
+}
+.aboutus-text{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color:$letters;
+    width: 100%;
+    padding: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin: 0;
+}    
 @media screen and (max-width: 1270px){
-    .nav-item{
+    .header .navbar .nav-item{
         max-width: 80px;
         font-size: 1rem;
     }
-    .title{
-        font-size: 2.5rem;
-        letter-spacing: 10px;
-    }
-    .phrase{
-        font-size: 2rem;
-        letter-spacing: 10px;
-    }
-    .nav-item:hover{
-        background-color: #f8b195;
+    main section{
+        .video .title{
+            font-size: 2.5rem;
+            letter-spacing: 10px;
+        }
+        .video .phrase{
+            font-size: 2rem;
+            letter-spacing: 10px;
+            padding: 10px;
+        }
     }
 }
 @media screen and (max-width: 768px){
@@ -315,20 +333,46 @@
     .hijo{
         font-size: 0.8rem;
     }
-    .title{
-        font-size: 1.5rem;
-        letter-spacing: 10px;
+    main section{
+        .video .title{
+            font-size: 1.5rem;
+            letter-spacing: 10px;
+        }
+        .video .phrase{
+            font-size: 1rem;
+            letter-spacing: 10px;
+            padding: 10px;
+        }
+        .text{
+            font-size: 0.8rem;
+            padding: 10px;
+        }
+        .contact .msg{
+            font-size: 1.5rem;
+            padding: 20px;
+        }
+        .contact .formulario{
+            padding: 5px;
+        }
+        .contact .formulario .field, .form-check{
+            font-size: 0.5rem;
+            width: 150px;
+        }
+        .contact .formulario .button{
+            font-size: 0.5rem;
+            width: 150px;
+        }
+        .opinions-title{
+            font-size: 1.5rem;
+        }
+        .carousel{
+            font-size: 0.8rem;
+        }
     }
-    .phrase{
+    footer section .legal-text{
         font-size: 1rem;
-        letter-spacing: 10px;
-        padding: 10px;
     }
-    .text{
-        font-size: 0.8rem;
-        padding: 10px;
-    }
-    .teacherslist{
+    .mainteachers .teacherslist{
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: repeat(6, 1fr);    
@@ -343,10 +387,8 @@
     .empty1, .empty2, .empty3{
         display: none;
     }
-    .teacherimga, .teacherimgb, .teacherimgc{
-        border-radius: 10px;
-        filter: drop-shadow(5px 5px 1rem black);
-        padding: 10%;
+    .mainteachers .teacherslist .aboutteachera, .mainteachers .teacherslist .aboutteacherb, .mainteachers .teacherslist .aboutteacherc{
+        font-size: 0.8rem;
     }
     .aboutus-title{
         font-size: 2rem;
@@ -356,18 +398,5 @@
         font-size: 0.8rem;
         padding: 10px;
     }
-    .msg{
-        font-size: 1.5rem;
-        padding: 20px;
-    }
-    .formulario{
-        padding: 5px;
-    }
-    .field, .button, .form-check{
-        font-size: 0.5rem;
-        width: 150px;
-    }
-    .aboutteachera, .aboutteacherb, .aboutteacherc{
-        font-size: 0.8rem;
-    }
+    
 }
