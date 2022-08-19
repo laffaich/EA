@@ -13,7 +13,7 @@
 }
 .nav-item:hover{
     transition: all 0.3s ease-in-out;
-    background-color: gray;
+    background-color: #808080;
     border-radius: 50%;
 }
 .video{
@@ -33,7 +33,7 @@
 }
 .title{
     font-family: 'Josefin Sans', sans-serif;
-    color: white; 
+    color: #ffffff; 
     letter-spacing: 30px;
     font-size: 3.5rem;
 }
