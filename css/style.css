@@ -133,6 +133,7 @@
 
 .follow {
   font-size: 2rem;
+  color: #ffffff;
   padding: 10px;
 }
 .follow li {
@@ -148,7 +149,7 @@
   padding: 5px;
 }
 
-.mainteachers, .maincourses, .aboutus-page {
+.mainteachers, .maincourses, .aboutus-main {
   background-color: #6c5b7b;
 }
 
@@ -175,10 +176,10 @@
   padding: 30px;
   padding-left: 150px;
   padding-right: 150px;
+  margin: 0;
 }
 
 .teacherslist {
-  width: 100%;
   padding-left: 10%;
   padding-right: 10%;
   display: grid;
@@ -227,7 +228,6 @@
   border-radius: 10px;
   filter: drop-shadow(5px 5px 1rem black);
   padding: 10%;
-  width: 100%;
 }
 
 .aboutteachera, .aboutteacherb, .aboutteacherc {
@@ -321,7 +321,7 @@
 @media screen and (max-width: 1270px) {
   .nav-item {
     max-width: 80px;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .title {
     font-size: 2.5rem;
@@ -345,12 +345,13 @@
     font-size: 0.8rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 10px;
   }
   .phrase {
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 10px;
+    padding: 10px;
   }
   .text {
     font-size: 0.8rem;
@@ -369,7 +370,6 @@
     border-radius: 10px;
     filter: drop-shadow(5px 5px 1rem black);
     padding: 10%;
-    width: 100%;
   }
   .aboutus-title {
     font-size: 2rem;
@@ -389,5 +389,8 @@
   .field, .button, .form-check {
     font-size: 0.5rem;
     width: 150px;
+  }
+  .aboutteachera, .aboutteacherb, .aboutteacherc {
+    font-size: 0.8rem;
   }
 }
