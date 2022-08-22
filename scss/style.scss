@@ -4,6 +4,20 @@
     padding:0;
     box-sizing: border-box;
 }
+@mixin title-style{
+    font-family: 'Josefin Sans', sans-serif;
+    color:$letters;
+    text-align: center;
+    font-size: 3rem;
+}
+@mixin teacherstext{
+    font-family: 'Josefin Sans', sans-serif;
+    color:$letters;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    padding: 30px;
+    justify-self: stretch;
+}
 .header{
     .navbar{
         background-color:$fondonav;
@@ -70,10 +84,7 @@ main{
             justify-content: center;
             width: 100%;
             .msg{
-                font-family: 'Josefin Sans', sans-serif;
-                color:$letters;
-                text-align: center;
-                font-size: 3rem;
+                @include title-style;
                 background-color:$bgcontact;
                 padding: 100px;
             }
@@ -101,10 +112,7 @@ main{
             }
         }
         .opinions-title{
-            font-family: 'Josefin Sans', sans-serif;
-            color:$letters;
-            text-align: center;
-            font-size: 2em;
+            @include title-style;
             padding: 10px;
         }
         .carousel{
@@ -147,10 +155,7 @@ footer{
 }
 .mainteachers{
     .teachers{
-        font-family: 'Josefin Sans', sans-serif;
-        color:$letters;
-        text-align: center;
-        font-size: 3rem;
+        @include title-style;
         padding: 20px;
     }
     .teacherslist{
@@ -192,115 +197,105 @@ footer{
         }
         .teacherimga, .teacherimgb, .teacherimgc{
             border-radius: 10px;
-                filter: drop-shadow(5px 5px 1rem black);
-            padding: 10%;
-            
+                filter: drop-shadow(5px 5px 1rem black);            
         }
         .aboutteachera, .aboutteacherb, .aboutteacherc{
-            font-family: 'Josefin Sans', sans-serif;
-            color:$letters;
-            font-size: 1rem;
-            letter-spacing: 0.5rem;
-            padding: 10px;
-            justify-self: stretch;
+            @include teacherstext;
         }
     }
 }
-.aboutus-title{
-    font-family: 'Josefin Sans', sans-serif;
-    color:$letters;
-    text-align: center;
-    font-size: 3rem;
-    padding: 20px;
+.aboutus-main{
+    .aboutus-page{
+        color:$letters;
+    }
+    .aboutus-title{
+        @include title-style;
+        padding: 20px;
+    }
+    .aboutus-text{
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: justify;
+        letter-spacing: 5px;
+        font-size: 2rem;
+        line-height: 1.5;
+        color:$letters;
+        width: 100%;
+        padding: 30px;
+        padding-left: 150px;
+        padding-right: 150px;
+        margin: 0;
+    }    
 }
 .maincourses{
     display: flex;
     flex-direction: column;
-}
-.coursestitle{
-    font-family: 'Josefin Sans', sans-serif;
-    color:$letters;
-    text-align: center;
-    font-size: 3rem;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.padre{
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: repeat(3, 418px);    
-    grid-template-areas: 
-    "esp kids"
-    "teens adults"
-    "conversation prep";
-}
-.hijo{
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: none;
-    color:$letters;
-    text-align: center;
-    font-size: 1.3rem;
-    padding: 10px;
-    position: relative;
-        img{
-            padding-left: 50px;
-            padding-right: 50px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            filter: brightness(0.3);
-            &:hover{
-                transition: all 0.3s ease-in-out;
-                filter: brightness(0.7);
-            }
-        }
-        h2, p{
-            position: relative;
-            flex-direction: column;
+    .coursestitle{
+        @include title-style;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .padre{
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: repeat(3, 418px);    
+        grid-template-areas: 
+        "esp kids"
+        "teens adults"
+        "conversation prep";
+        .hijo{
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: none;
+            color:$letters;
+            text-align: center;
+            font-size: 1.3rem;
             padding: 10px;
-            padding-top: 20px;
-            padding-left: 50px;
-            padding-right: 50px;
-            align-items: center;
+            position: relative;
+                img{
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    filter: brightness(0.3);
+                    &:hover{
+                        transition: all 0.3s ease-in-out;
+                        filter: brightness(0.7);
+                    }
+                }
+                h2, p{
+                    position: relative;
+                    flex-direction: column;
+                    padding: 10px;
+                    padding-top: 20px;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    align-items: center;
+                }
         }
+        .esp{
+            grid-area: esp;
+        }
+        .kids{
+            grid-area: kids;
+        }
+        .teens{
+            grid-area: teens;
+        }
+        .adults{
+            grid-area: adults;
+        }
+        .conversation{
+            grid-area: conversation;
+        }
+        .prep{
+            grid-area: prep;
+        }
+    }
 }
-.esp{
-    grid-area: esp;
-}
-.kids{
-    grid-area: kids;
-}
-.teens{
-    grid-area: teens;
-}
-.adults{
-    grid-area: adults;
-}
-.conversation{
-    grid-area: conversation;
-}
-.prep{
-    grid-area: prep;
-}
-.aboutus-page{
-    color:$letters;
-}
-.aboutus-text{
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: justify;
-    letter-spacing: 5px;
-    font-size: 2rem;
-    line-height: 1.5;
-    color:$letters;
-    width: 100%;
-    padding: 30px;
-    padding-left: 150px;
-    padding-right: 150px;
-    margin: 0;
-}    
+
 @media screen and (max-width: 1270px){
     .header .navbar .nav-item{
         max-width: 80px;
@@ -319,7 +314,11 @@ footer{
     }
 }
 @media screen and (max-width: 768px){
-    .padre{
+    .maincourses{
+        .coursestitle{
+            font-size: 1.5rem;
+        }
+        .padre{
         grid-template-columns: 1fr; 
         grid-template-rows: repeat(6, 418px);    
         grid-template-areas: 
@@ -329,9 +328,10 @@ footer{
         "adults"
         "conversation"
         "prep";
-    }
-    .hijo{
+        }
+        .padre .hijo{
         font-size: 0.8rem;
+        }
     }
     main section{
         .video .title{
@@ -375,7 +375,7 @@ footer{
     .mainteachers .teacherslist{
         display: grid;
         grid-template-columns: 1fr; 
-        grid-template-rows: repeat(6, 1fr);    
+        grid-template-rows: repeat(6, auto);    
         grid-template-areas: 
         "teacherimga"
         "aboutteachera"
@@ -390,13 +390,17 @@ footer{
     .mainteachers .teacherslist .aboutteachera, .mainteachers .teacherslist .aboutteacherb, .mainteachers .teacherslist .aboutteacherc{
         font-size: 0.8rem;
     }
-    .aboutus-title{
-        font-size: 2rem;
-        letter-spacing: 10px;
+    .mainteachers .teachers{
+        font-size: 1.5rem;
     }
-    .aboutus-text{
+    .aboutus-main{
+        .aboutus-title{
+        font-size: 1.5rem;
+        letter-spacing: 10px;
+        }
+        .aboutus-text{
         font-size: 0.8rem;
         padding: 10px;
+        }   
     }
-    
 }
