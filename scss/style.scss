@@ -9,6 +9,7 @@
     color:$letters;
     text-align: center;
     font-size: 3rem;
+    user-select: none;
 }
 @mixin teacherstext{
     font-family: 'Josefin Sans', sans-serif;
@@ -17,6 +18,7 @@
     letter-spacing: 0.5rem;
     padding: 30px;
     justify-self: stretch;
+    user-select: none;
 }
 .header{
     .navbar{
@@ -50,6 +52,7 @@ main{
                 position: absolute;
                 width: 100%;
                 text-align: center;
+                user-select: none;
             }
             .title{
                 font-family: 'Josefin Sans', sans-serif;
@@ -77,6 +80,7 @@ main{
             padding: 30px;
             padding-left: 150px;
             padding-right: 150px;
+            user-select: none;
         }
         .contact{
             background-color:$bgcontact;
@@ -89,6 +93,7 @@ main{
                 @include title-style;
                 background-color:$bgcontact;
                 padding: 100px;
+                user-select: none;
             }
             .formulario{
                 background-color:$bgcontact;
@@ -148,6 +153,7 @@ footer{
             font-family: 'Josefin Sans', sans-serif;
             text-align: center;
             padding: 5px;
+            user-select: none;
         }
     }
 }
@@ -231,6 +237,7 @@ footer{
 .maincourses{
     display: flex;
     flex-direction: column;
+    user-select: none;
     .coursestitle{
         @include title-style;
         padding: 30px;
